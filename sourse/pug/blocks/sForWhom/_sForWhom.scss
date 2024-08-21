@@ -1,6 +1,6 @@
 // start .sForWhom
 .sForWhom {
-	--sPT: #{rem(75)};
+	--sPT: #{rem(60)};
 	--sPB: #{rem(90)};
 	--sTPB: #{rem(35)};
 	position: relative;
@@ -17,6 +17,26 @@
     z-index: -3;
     @include media-breakpoint-up(lg) {
       border-radius: rem(60);
+    }
+  }
+
+  .flash {
+    position: absolute;
+    top: 30px;
+    left: 30%;
+  }
+
+  .flash-2 {
+    position: absolute;
+    bottom: 90px;
+    left: 55%;
+  }
+  .flash-sm {
+    position: absolute;
+    top: 150px;
+    right: 32%;
+    @include media-breakpoint-up(lg) {
+      top: 30px;
     }
   }
 

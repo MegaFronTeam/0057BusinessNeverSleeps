@@ -2,8 +2,18 @@ mixin sForWhom(data)
 	// start sForWhom
 	+b.SECTION.sForWhom.section#sForWhom&attributes(attributes)
 		.container
-			+b.section-title
-				h2 sForWhom
-				
 			+e.row.row
+				+e.col.col-lg-8
+					+b.section-title
+						h2 Для кого?
+					ul
+						li Тебе 14-35 лет
+						li Интересуешься бизнесом
+						li Или уже есть своё дело
+					.h6 Мероприятия открыты к посещению по предварительной регистрации Чтобы получить разбор, необходимо заполнить заявку и пройти отбор
+					+e.btn.btn.btn-primary(href='#') Участвовать
+						+img(src="img/svg/arrows.svg", alt="")
+				+e.col.col-lg-4
+					+e.img-wrap
+						+img(src="img/sForWhom-img.png").img
 	// end sForWhom

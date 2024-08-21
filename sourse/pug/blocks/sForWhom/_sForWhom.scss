@@ -1,22 +1,93 @@
 // start .sForWhom
 .sForWhom {
-	// --sPT: #{rem()};
-	// --sPB: #{rem()};
-	// --sTPB: #{rem()};
-	
+	--sPT: #{rem(75)};
+	--sPB: #{rem(90)};
+	--sTPB: #{rem(35)};
+	position: relative;
+  overflow: hidden;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $purple;
+    border-radius: rem(30);
+    z-index: -3;
+    @include media-breakpoint-up(lg) {
+      border-radius: rem(60);
+    }
+  }
+
 	&__row{
 		// --bs-gutter-x: #{rem()};
-		// --bs-gutter-y: #{rem()};
+		--bs-gutter-y: #{rem(40)};
+    align-items: center;
 	}
-	.section-title{
-		
+	.section-title {
 	}
-	&__col{
-		
-	}
-	&__item{
-		
-	}
+  .h6 {
+    max-width: rem(666);
+    font-family: $font-family-circe;
+    font-size: rem(20);
+    margin-bottom: rem(46);
+  }
+
+	li {
+    font-family: $font-family-circe;
+    position: relative;
+    padding-left: 45px;
+    font-size: rem(20);
+    margin-bottom: 14px;
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 0;
+    }
+  }
+  ul {
+    list-style-type: none;
+    margin-bottom: rem(46);
+    @include media-breakpoint-up(lg) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: rem(24);
+    }
+  }
+
+  li:before {
+    content: ''; 
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 35px;
+    height: 35px;
+    background-image: url("data:image/svg+xml,%3Csvg width='37' height='37' viewBox='0 0 37 37' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18.375 35.75C22.3948 35.75 26.2902 34.3562 29.3976 31.8061C32.5049 29.2559 34.6319 25.7073 35.4161 21.7647C36.2004 17.8221 35.5933 13.7296 33.6984 10.1845C31.8035 6.63934 28.7379 3.8609 25.0241 2.32259C21.3103 0.784284 17.178 0.581276 13.3313 1.74816C9.4846 2.91505 6.1615 5.37962 3.92822 8.72196C1.69494 12.0643 0.689657 16.0776 1.08366 20.078C1.47767 24.0785 3.24659 27.8185 6.08902 30.661' stroke='%23FFC800' stroke-width='2' stroke-linecap='round' /%3E%3Cpath d='M26.0972 14.5139L17.8465 24.4148C17.1909 25.2015 16.8631 25.5948 16.4226 25.6148C15.982 25.6348 15.6199 25.2727 14.8958 24.5486L10.6528 20.3056' stroke='%23FFC800' stroke-width='2' stroke-linecap='round' /%3E%3C/svg%3E");
+    background-size: cover;
+  }
+
+  &__img-wrap {
+    position: relative;
+    @include media-breakpoint-up(xl) {
+      margin-left: rem(-40);
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: -10px;
+      left: 20px;
+      display: inline-block;
+      width: 106%;
+      height: 110%;
+      border: 1px solid $primary;
+      z-index: -1;
+      max-width: 500px;
+    }
+    .img {
+      max-width: 105%;
+    }
+  }
 
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}

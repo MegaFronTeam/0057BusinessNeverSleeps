@@ -1,0 +1,48 @@
+mixin sEvents(data)
+	// start sEvents
+	+b.SECTION.sEvents.section#sEvents&attributes(attributes)
+		.container
+			+b.section-title
+				h2 Мероприятия
+			mixin item(img, title, text, city, date='24 сентября')
+				+e.item
+					+e.img-wrap
+						+e.info
+							+e.city!= city
+							+e.date!= date
+						.img-wrap-center: +img(`img/${img}`,'bg')
+					+e.content
+						h5!= title
+						p!= text
+						+e.inner-row.row
+							.col-lg: +e.btn.btn.btn-primary(href='#')
+								| Трансляция
+								+img('img/svg/desktop.svg')
+							.col-lg: +e.btn.btn.btn-light(href='#')
+								| Регистрация
+								+img('img/svg/arrows.svg')
+			+e.row.row
+				.col-md-6.col-lg-4: +item('sEvents-img-1.jpg', '<span>Разборы</span> с Игорем Стояновым', 'Банкетный зал The Event Hall', "Санкт-Петербург")
+				.col-md-6.col-lg-4: +item('sEvents-img-2.jpg', '<span>Разборы</span> с Игорем Манном', 'Концертный комплекс «Андеграунд»', "Владивосток")
+				.col-md-6.col-lg-4: +item('sEvents-img-2.jpg', '<span>Разборы</span> с Игорем Стояновым', 'Банкетный зал The Event Hall', "Санкт-Петербург")
+			+e.wrap.bg-wrap
+				+img('img/sEvents-bg-1.png').bg
+				.row
+					.col-auto
+						h4.title
+							| Оставляй заявку на разбор бизнеса тут
+							+img('img/sEvents-img-1.png').arrow-1
+						+e.btn.btn.btn-light.btn-border(href='#')
+							| Оставить заявку
+							+img('img/svg/arrows.svg')
+						+e.message--from А если я из другого города?
+						+e.message--to Мы позаботились об этом и подготовили онлайн-трансляцию,<br/>чтобы смотреть разборы можно было из любого уголка страны.
+					.col-auto
+						+e.reg 
+							h4 
+								| Регистрируйся здесь, чтобы смотреть разборы очно
+								+img('img/sEvents-img-2.png').arrow-2
+							+e.btn.btn.btn-light.btn-border(href='#')
+								| Регистрация
+								+img('img/svg/arrows.svg')
+	// end sEvents

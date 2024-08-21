@@ -27,8 +27,7 @@
     object-fit: cover;
   }
 	&__row{
-		// --bs-gutter-x: #{rem()};
-		--bs-gutter-y: #{rem(30)};
+		--bs-gutter-y: #{rem(50)};
 	}
   h2 {
     margin-bottom: rem(24);

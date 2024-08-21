@@ -2,25 +2,55 @@
 	// start .sContact
 	.sContact {
 	// --sPT: #{rem()};
-	// --sPB: #{rem()};
-	// --sTPB: #{rem()};
+	--sPB: #{rem(90)};
+	--sTPB: #{rem(22)};
 	&__row{
 		// --bs-gutter-x: #{rem()};
 		--bs-gutter-y: var(--bs-gutter-x);
 
 	}
-	.section-title{
-		
-	}
-	&__col{
+		position: relative;
 
+  .city {
+    position: absolute;
+    bottom: rem(-30);
+    right: rem(-50);
+    z-index: -1;
+    max-width: 110vw;
+  }
+	&__wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: rem(20) rem(46);
 	}
-	&__item{
+	&__item {
+    // padding-right: rem(46);
+    &:first-child {
+      position: relative;
+      &:after {
+        content: '';
+        display: inline-block;
+        width: 1px;
+        height: 15px;
+        background: $body-color;
+        transform: translate(20px, 3px);
+      }
+    }
+    a {
+      font-weight: 700;
+      color: $white;
+    }
+	}
+	p {
+    margin-bottom: 0;
+  }
 
-	}
-	&__slide{
-		height: auto;
-	}
+  .icon {
+    font-size: rem(17);
+    margin-left: rem(5);
+    transform: translateY(-15%);
+  }
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
 	@include media-breakpoint-up(md) {}

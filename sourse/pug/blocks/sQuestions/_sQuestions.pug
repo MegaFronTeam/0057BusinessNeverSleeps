@@ -1,0 +1,22 @@
+mixin sQuestions(data)
+	// start sQuestions
+	+b.SECTION.sQuestions.section#sQuestions&attributes(attributes)
+		.container
+			+b.section-title
+				h2 Часто задаваемые вопросы
+			+ddGroup
+				+ddGroupItem('Участие в проекте платное?')
+					p Здесь и в социальных сетях Росмолодёжь.Бизнес
+				+ddGroupItem('Какие критерии отбора на разбор?')
+					p Здесь и в социальных сетях Росмолодёжь.Бизнес
+				+ddGroupItem('Как узнать, что я прошёл отбор?')
+					p Здесь и в социальных сетях Росмолодёжь.Бизнес
+				+ddGroupItem('А если я из другого города?')
+					p Здесь и в социальных сетях Росмолодёжь.Бизнес
+				+ddGroupItem('Где смотреть трансляцию?', 'active')
+					p Здесь и в социальных сетях Росмолодёжь.Бизнес 
+						a(href='https://vk.com/rosmolodez.business') https://vk.com/rosmolodez.business
+			.text-center
+				+e.btn.btn.btn-primary(href='#') Подать заявку
+					+img(src="img/svg/arrows.svg", alt="")
+	// end sQuestions

@@ -472,3 +472,14 @@ iframe {
 		object-fit: cover;
 	}
 }
+
+.btn {
+  img {
+    margin-left: rem(8);
+  }
+}
+
+.btn-light.btn-border {
+  --bs-btn-border-color: #000;
+  --bs-btn-hover-border-color: #000;
+}

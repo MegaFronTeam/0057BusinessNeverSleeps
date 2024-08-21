@@ -1,0 +1,32 @@
+mixin sApply(data)
+	// start sApply
+	+b.SECTION.sApply.section#sApply&attributes(attributes)
+		.container
+			+img(src="img/svg/star.svg", alt="").star
+			+b.section-title
+				h2 Как подать заявку
+			+b.counter-large.cards-gr
+				+e.item
+					+img(src="img/svg/right.svg", alt="").img
+					p Зарегистрируйся на платформе 
+						a(href='#') Росмолодёжь.Бизнес
+				+e.item
+					+img(src="img/svg/right.svg", alt="").img
+					p Подай заявку на очное участие в мероприятии или оставь заявку на разбор
+					+e.btn.btn.btn-light(href='#') Регистрация
+						+img(src="img/svg/arrows.svg", alt="")
+				+e.item
+					+img(src="img/svg/right.svg", alt="").img
+					p Дождись результатов, организаторы свяжутся с тобой, если твой бизнес выберут для разбора
+			+e.inner-wrap
+				+img(src="img/svg/star-sm.svg", alt="").star-sm.d-none.d-lg-inline
+				+img(src="img/svg/star-sm.svg", alt="").star-sm-2
+				+img(src="img/svg/city-crop.svg", alt="").city.city_left.d-none.d-lg-inline
+				.wrap
+					.h4 Участие бесплатно!
+					p *Мероприятия реализуются в рамках Всероссийской программы по развитию молодёжного предпринимательства
+					+e.btn.btn.btn-light.btn-border(href='#') Подать заявку
+						+img(src="img/svg/arrows.svg", alt="")
+				+img(src="img/svg/city-crop.svg", alt="").city.city_right
+
+	// end sApply

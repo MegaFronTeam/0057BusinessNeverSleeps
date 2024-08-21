@@ -1,0 +1,32 @@
+// start .sPartners
+.sPartners {
+	// --sPT: #{rem()};
+	// --sPB: #{rem()};
+	--sTPB: #{rem(30)};
+	background: $purple;
+	&__row{
+    --bs-gutter-x: #{rem(40)};
+		--bs-gutter-y: var(--bs-gutter-x);
+	}
+
+	&__img-wrap {
+		background: $white;
+    height: 100%;
+    min-height: rem(147);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      max-width: 90%;
+    }
+	}
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sPartners

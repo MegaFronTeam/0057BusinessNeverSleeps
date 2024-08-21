@@ -2,8 +2,13 @@ mixin sContact()
 	// start sContact
 	+b.SECTION.sContact.section#sContact&attributes(attributes)
 		.container
-			+b.section-title.text-center
-				h2 sContact
-				
-			+e.row.row
+			+img('img/svg/city.svg').city
+			+b.section-title
+				h2 КОнтакты
+			+e.wrapper
+				+e.item
+					a(href='mailto:pburina@business.fadm.gov.ru') pburina@business.fadm.gov.ru
+				+e.item
+					p Сообщество ВК: 
+						a(href='#'): +icon('vk')
 	// end sContact

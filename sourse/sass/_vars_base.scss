@@ -11,7 +11,7 @@ $rfs-breakpoint: 1200px !default;
 
 @include font-face('Bebas Neue Cyrillic', $addr + "BebasNeueCyrillic", 400, $file-formats: $file-format);
 @include font-face('Circe', $addr + "Circe-Bold", 700, $file-formats: $file-format);
-@include font-face('Circe Light', $addr + "Circe-light", 300, $file-formats: $file-format);
+@include font-face('Circe Light', $addr + "Circe-Light", 300, $file-formats: $file-format);
 
 $font-family-sans-serif: $default-font, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" ; 
 

@@ -1,11 +1,18 @@
 mixin headerBlock()
 	// start headerBlock
-	+b.headerBlock.section#headerBlock&attributes(attributes)
+	mixin tag(text, customClass)
+		.col-auto: +e.tag(class=customClass)!= text
+	+b.headerBlock.bg-wrap.section#headerBlock&attributes(attributes)
+		+img('img/headerBlock-bg-1.png').bg-1
 		.container
-			+b.section-title
-				h2 headerBlock ds dfsdfdsfsd
-				+icon('telegram')
-				+iconC('telegram')
-			.row
-						
+			+e.wrap
+				+img('img/headerBlock-img-1.png').img-1
+				h1.h5 Уникальный проект для всей России. Опытные предприниматели разбирают кейсы молодых бизнесов «со всех сторон».<br/>Участвуй очно или смотри трансляцию из любой точки страны!
+				.row
+					+tag('Как выйти из операционки?')
+					+tag('Как пробить стеклянный потолок?', 'bg-primary')
+					+tag('Как получить инвестиции?')
+					+tag('Как справиться с кассовым разрывом?')
+					+tag('Как выйти на международные рынки?', 'bg-primary')
+				p Узнай ответы на эти и многие другие вопросы от ведущих медийных бизнесменов страны на открытых бизнес-разборах
 	// end headerBlock

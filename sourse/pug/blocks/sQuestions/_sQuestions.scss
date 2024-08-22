@@ -3,41 +3,40 @@
 	// --sPT: #{rem()};
 	--sPB: #{rem(80)};
 	--sTPB: #{rem(60)};
-	
-	&__row{
+
+	&__row {
 		// --bs-gutter-x: #{rem()};
 		// --bs-gutter-y: #{rem()};
 	}
-	.section-title{
-		
+	.section-title {
 	}
 	p:last-child {
-    margin-bottom: 0;
-  }
+		margin-bottom: 0;
+	}
 
-  .dd-group {
-    margin-bottom: rem(70);
-    &__head {
-      padding: rem(33) rem(21);
-      padding-bottom: rem(30);
-      font-size: rem(16);
-      background: $white;
-      cursor: pointer;
-      color: $black;
-      font-family: $font-family-circe;
-      font-weight: 700;
-      line-height: 120%;
-      display: flex;
-      gap: rem(10);
-      justify-content: space-between;
-      align-items: center;
-      @include media-breakpoint-up(md) {
-        font-size: rem(25);
-      }
-      &:after {
+	.dd-group {
+		margin-bottom: rem(70);
+		&__head {
+			padding: rem(33) rem(21);
+			padding-bottom: rem(30);
+			font-size: rem(16);
+			background: $white;
+			cursor: pointer;
+			color: $black;
+			font-family: $font-family;
+			font-weight: 700;
+			line-height: 120%;
+			display: flex;
+			gap: rem(10);
+			justify-content: space-between;
+			align-items: center;
+			@include media-breakpoint-up(md) {
+				font-size: rem(25);
+			}
+			&:after {
 				@include mt;
-				content: '';
-        flex-shrink: 0;
+				content: "";
+				flex-shrink: 0;
 				display: inline-block;
 				width: rem(30);
 				height: rem(30);
@@ -47,16 +46,16 @@
 				background-size: contain;
 				margin-left: rem(4);
 				vertical-align: middle;
-        @include media-breakpoint-up(md) {
-          width: rem(40);
-          height: rem(40);
-        }
+				@include media-breakpoint-up(md) {
+					width: rem(40);
+					height: rem(40);
+				}
 			}
-    }
-    &__item {
-      &:not(:last-child) {
-        margin-bottom: rem(15);
-      }
+		}
+		&__item {
+			&:not(:last-child) {
+				margin-bottom: rem(15);
+			}
 			&:last-child {
 				margin-bottom: 0;
 			}
@@ -66,33 +65,40 @@
 				}
 			}
 		}
-    &__content {
-      transform: translateY(-1px);
-      font-family: $font-family-circe-light;
-      background: $white;
-      color: $black;
-      line-height: 120%;
-      font-size: 20px;
-      padding: 0 15% rem(20) rem(25);
-    }
-  }
-  a {
-    color: $black;
-  }
+		&__content {
+			transform: translateY(-1px);
+			font-family: $font-family;
+			font-weight: 300;
+			background: $white;
+			color: $black;
+			line-height: 120%;
+			font-size: 20px;
+			padding: 0 15% rem(20) rem(25);
+		}
+	}
+	a {
+		color: $black;
+	}
 
-	@include media-breakpoint-up(xl) {}
-	@include media-breakpoint-up(lg) {}
-	@include media-breakpoint-up(md) {}
-	@include media-breakpoint-up(sm) {}
-	@include media-breakpoint-between(md, xl) {}
-	@include media-breakpoint-only(xl) {}
-	@include media-breakpoint-down(xl) {}
+	@include media-breakpoint-up(xl) {
+	}
+	@include media-breakpoint-up(lg) {
+	}
+	@include media-breakpoint-up(md) {
+	}
+	@include media-breakpoint-up(sm) {
+	}
+	@include media-breakpoint-between(md, xl) {
+	}
+	@include media-breakpoint-only(xl) {
+	}
+	@include media-breakpoint-down(xl) {
+	}
 } // end.sQuestions
 
-
 .dd-group__content {
-  display: none;
-  &.active {
-    display: block;
-  }
+	display: none;
+	&.active {
+		display: block;
+	}
 }

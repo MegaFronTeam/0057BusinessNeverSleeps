@@ -3,170 +3,176 @@
 	// --sPT: #{rem()};
 	--sPB: #{rem(49)};
 	// --sTPB: #{rem()};
-	
-	&__row{
+
+	&__row {
 		// --bs-gutter-x: #{rem()};
 		// --bs-gutter-y: #{rem()};
 	}
-  position: relative;
-  overflow: hidden;
-  &:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: $purple;
-    border-radius: rem(30);
-    z-index: -3;
-    @include media-breakpoint-up(lg) {
-      border-radius: rem(60);
-    }
-  }
+	position: relative;
+	overflow: hidden;
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: $purple;
+		border-radius: rem(30);
+		z-index: -3;
+		@include media-breakpoint-up(lg) {
+			border-radius: rem(60);
+		}
+	}
 
 	.container {
 		position: relative;
 	}
 
 	.star {
-    position: absolute;
-    top: 0px;
-    right: 10%;
-    z-index: -1;
-    @include media-breakpoint-up(lg) {
-      right: 31%;
-    }
-  }
+		position: absolute;
+		top: 0px;
+		right: 10%;
+		z-index: -1;
+		@include media-breakpoint-up(lg) {
+			right: 31%;
+		}
+	}
 
-  .star-sm {
-    position: absolute;
-    top: 18%;
-    left: 28%;
-    z-index: -1;
-  }
-  .star-sm-2 {
-    position: absolute;
-    bottom: 20%;
-    right: 25%;
-    width: 70px;
-    z-index: -1;
-  }
+	.star-sm {
+		position: absolute;
+		top: 18%;
+		left: 28%;
+		z-index: -1;
+	}
+	.star-sm-2 {
+		position: absolute;
+		bottom: 20%;
+		right: 25%;
+		width: 70px;
+		z-index: -1;
+	}
 
-  .cards-gr {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: rem(40);
-    justify-content: space-between;
-    margin-bottom: rem(45);
+	.cards-gr {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: rem(40);
+		justify-content: space-between;
+		margin-bottom: rem(45);
 
-    @include media-breakpoint-up(lg) {
-      grid-template-columns: repeat(3, 307px);
-    }
-  }
+		@include media-breakpoint-up(lg) {
+			grid-template-columns: repeat(3, 307px);
+		}
+	}
 
-  &__inner-wrap {
-    position: relative;
-    color: $black;
-    padding: rem(32) 0 rem(32);
-    &::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: -100vw;
-      width: 200vw;
-      height: 100%;
-      background: $primary;
-      z-index: -2;
-    }
+	&__inner-wrap {
+		position: relative;
+		color: $black;
+		padding: rem(32) 0 rem(32);
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: -100vw;
+			width: 200vw;
+			height: 100%;
+			background: $primary;
+			z-index: -2;
+		}
 
-    p {
-      font-family: $font-family-circe-light;
-    }
+		p {
+			font-family: $font-family;
+			font-weight: 300;
+		}
 
-    display: grid;
-    grid-template-columns: 442px;
-    gap: rem(40);
-    justify-items: center;
+		display: grid;
+		grid-template-columns: 442px;
+		gap: rem(40);
+		justify-items: center;
 
-    @include media-breakpoint-up(lg) {
-      grid-template-columns: 442px;
-      justify-content: center;
-    }
+		@include media-breakpoint-up(lg) {
+			grid-template-columns: 442px;
+			justify-content: center;
+		}
 
-    .wrap {
-      @include media-breakpoint-up(lg) {
-        transform: translateX(20%);
-      }
-      @include media-breakpoint-up(xl) {
-        transform: translateX(16%);
-      }
-    }
-  }
+		.wrap {
+			@include media-breakpoint-up(lg) {
+				transform: translateX(20%);
+			}
+			@include media-breakpoint-up(xl) {
+				transform: translateX(16%);
+			}
+		}
+	}
 
-  .city {
-    position: absolute;
-    bottom: -1px;
-    max-width: 30vw;
+	.city {
+		position: absolute;
+		bottom: -1px;
+		max-width: 30vw;
 
-    &_left {
-      left: 0;
-      transform: translateX(-30%);
-    }
+		&_left {
+			left: 0;
+			transform: translateX(-30%);
+		}
 
-    &_right {
-      right: 0;
-      transform: translateX(30%);
-    }
-  }
+		&_right {
+			right: 0;
+			transform: translateX(30%);
+		}
+	}
 
-	@include media-breakpoint-up(xl) {}
-	@include media-breakpoint-up(lg) {}
-	@include media-breakpoint-up(md) {}
-	@include media-breakpoint-up(sm) {}
-	@include media-breakpoint-between(md, xl) {}
-	@include media-breakpoint-only(xl) {}
-	@include media-breakpoint-down(xl) {}
+	@include media-breakpoint-up(xl) {
+	}
+	@include media-breakpoint-up(lg) {
+	}
+	@include media-breakpoint-up(md) {
+	}
+	@include media-breakpoint-up(sm) {
+	}
+	@include media-breakpoint-between(md, xl) {
+	}
+	@include media-breakpoint-only(xl) {
+	}
+	@include media-breakpoint-down(xl) {
+	}
 } // end.sApply
 
-
-.counter-large{
+.counter-large {
 	counter-reset: num;
 	&__item {
 		position: relative;
 		&::before {
-      display: inline-flex;
-      align-items: center;
+			display: inline-flex;
+			align-items: center;
 
 			content: counter(num);
 			counter-increment: num;
-      --num-width: 100px;
-      --num-font: 40px;
-      // margin-bottom: rem(20);
+			--num-width: 100px;
+			--num-font: 40px;
+			// margin-bottom: rem(20);
 
-      @include media-breakpoint-up(md) {
-        --num-width: 147px;
-        --num-font: 60px;
-        // margin-bottom: rem(38);
-      }
+			@include media-breakpoint-up(md) {
+				--num-width: 147px;
+				--num-font: 60px;
+				// margin-bottom: rem(38);
+			}
 
-      color: $primary;
-      font-family: $headings-font-family;
-      font-size: var(--num-font);
-      width: 10px;
-      height: var(--num-width);
-
+			color: $primary;
+			font-family: $headings-font-family;
+			font-size: var(--num-font);
+			width: 10px;
+			height: var(--num-width);
 		}
-    p {
-      max-width: rem(440);
-      text-wrap: pretty;
-      font-size: rem(20);
-      font-family: $font-family-circe-light;
-    }
+		p {
+			max-width: rem(440);
+			text-wrap: pretty;
+			font-size: rem(20);
+			ont-family: $font-family;
+			font-weight: 300;
+		}
 
-    .img {
-      margin-bottom: rem(28);
-    }
-
+		.img {
+			margin-bottom: rem(28);
+		}
 	}
 }

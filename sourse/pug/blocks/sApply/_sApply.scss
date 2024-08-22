@@ -85,8 +85,10 @@
 			font-weight: 300;
 		}
 
+		@include media-breakpoint-up(sm) {
+			grid-template-columns: 442px;
+		}
 		display: grid;
-		grid-template-columns: 442px;
 		gap: rem(40);
 		justify-items: center;
 

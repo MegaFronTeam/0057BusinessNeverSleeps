@@ -73,7 +73,7 @@
 			color: $black;
 			line-height: 120%;
 			font-size: 20px;
-			padding: 0 15% rem(20) rem(25);
+			padding: 1px 15% rem(20) rem(25);
 		}
 	}
 	a {
@@ -98,6 +98,8 @@
 
 .dd-group__content {
 	display: none;
+
+	padding-top: 1px;
 	&.active {
 		display: block;
 	}

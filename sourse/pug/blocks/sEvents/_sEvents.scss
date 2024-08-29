@@ -67,6 +67,7 @@
 		}
 	}
 	&__date {
+		position: relative;
 		padding: rem(6.5) rem(18.5);
 		line-height: 1.474;
 		font-weight: 700;
@@ -79,9 +80,24 @@
 			font-size: rem(18);
 		}
 	}
+	&__time {
+		background-color: rgba($color: #fff, $alpha: .52);
+		color: #111111;
+		line-height: 1.47375;
+		padding: rem(0.5) rem(11.900);
+		border-radius: rem(58.5);
+		font-size: rem(16);
+		font-weight: 700;
+		position: absolute;
+		right: 0;
+		top: calc(100% + rem(6));
+	}
+
 	&__content {
 		flex-grow: 1;
 		padding: rem(18);
+		display: flex;
+		flex-direction: column;
 		@include media-breakpoint-up(lg) {
 			padding: rem(53) rem(22) rem(43);
 		}
@@ -105,6 +121,8 @@
 	&__inner-row {
 		--bs-gutter-x: #{rem(13)};
 		--bs-gutter-y: #{rem(13)};
+
+		margin-top: auto;
 		.sEvents__btn {
 			--bs-btn-padding-x: #{rem(10)};
 			--bs-btn-padding-y: #{rem(13)};

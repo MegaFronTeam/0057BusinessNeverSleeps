@@ -9,7 +9,9 @@ mixin sEvents(data)
 					+e.img-wrap
 						+e.info
 							+e.city!= city
-							+e.date!= date
+							+e.date
+								!= date
+								+e.time 15:00
 						.img-wrap-center: +img(`img/${img}`,'bg')
 					+e.content
 						h5!= title

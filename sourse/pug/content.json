@@ -1,6 +1,6 @@
 {
 	"nav":[
-		{ "name":"О проекте", "url":"#"},
+		{ "name":"О проекте", "url":"#sEvents"},
 		{ "name":"Для кого", "url":"#sForWhom"},
 		{ "name":"Регистрация", "url":"#sApply"},
 		{ "name":"Вопросы", "url":"#sQuestions"},

@@ -4,7 +4,7 @@ mixin sEvents(data)
 		.container
 			+b.section-title
 				h2 Мероприятия
-			mixin item(img, title, text, city, date='24 сентября')
+			mixin item(img, title, text, city, date='24 сентября', modal)
 				+e.item
 					+e.img-wrap
 						+e.info
@@ -17,14 +17,19 @@ mixin sEvents(data)
 						h5!= title
 						p!= text
 						+e.inner-row.row
-							.col-lg: +e.btn.btn.btn-primary(href='#')
-								| Трансляция
-								+img('img/svg/desktop.svg')
+							if modal
+								.col-lg: +e.btn.btn.btn-primary.link-modal-js(href='#modal-live')
+									| Трансляция
+									+img('img/svg/desktop.svg')
+							else
+								.col-lg: +e.btn.btn.btn-primary(href='#')
+									| Трансляция
+									+img('img/svg/desktop.svg')
 							.col-lg: +e.btn.btn.btn-light(href='#')
 								| Регистрация
 								+img('img/svg/arrows.svg')
 			+e.row.row
-				.col-md-6.col-lg-4: +item('sEvents-img-1.jpg', '<span>Разборы</span> с Игорем Стояновым', 'Банкетный зал The Event Hall', "Санкт-Петербург")
+				.col-md-6.col-lg-4: +item('sEvents-img-1.jpg', '<span>Разборы</span> с Игорем Стояновым', 'Банкетный зал The Event Hall', "Санкт-Петербург", '24 сентября', true)
 				.col-md-6.col-lg-4: +item('sEvents-img-2.jpg', '<span>Разборы</span> с Игорем Манном', 'Концертный комплекс «Андеграунд»', "Владивосток")
 				.col-md-6.col-lg-4: +item('sEvents-img-2.jpg', '<span>Разборы</span> с Игорем Стояновым', 'Банкетный зал The Event Hall', "Санкт-Петербург")
 			+e.wrap.bg-wrap

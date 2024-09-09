@@ -15,6 +15,14 @@ mixin modal()
 				+policy()
 				+policy()
 	// #modal-call
+	div(id="modal-live"  style="display: none" )
+		+b.modal-win.bg-wrap
+			+img('img/modal-win-1.png').bg-1
+			.h1 трансляция скоро появится
+			+e.video-wrap
+				.img-wrap-center
+					iframe(src="https://www.youtube.com/embed/ZFt83Q3GOok" title="🔥 Cozy Fireplace 4K (12 HOURS). Fireplace with Crackling Fire Sounds. Crackling Fireplace 4K" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen)
+	// #modal-live
 
 	
 	// end modals

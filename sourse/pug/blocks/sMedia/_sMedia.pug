@@ -7,8 +7,8 @@ mixin sMedia(data)
 			.tabs.tabs-slider--js.swiper
 				.tabs__caption.swiper-wrapper.fw-700
 					.tabs__btn.swiper-slide.active ИГОРЬ СТОЯНОВ
-					.tabs__btn.swiper-slide.tab-disabled Игорь Манн
-					.tabs__btn.swiper-slide.tab-disabled ИЛЬя СУХИХ
+					.tabs__btn.swiper-slide Игорь Манн
+					.tabs__btn.swiper-slide ИЛЬя СУХИХ
 				.tabs__content.active
 					+e.title.fw-700 Санкт-Петербург  / Банкетный зал The Event Hall
 
@@ -35,7 +35,7 @@ mixin sMedia(data)
 								+e.img-wrap: +img(src="img/slider-2.png", alt="").img-bg
 							+e.slide.swiper-slide
 								+e.img-wrap: +img(src="img/slider-3.png", alt="").img-bg
-					.swiper-pagination
+						.swiper-pagination
 					+e.video-section
 						+img(src='img/svg/star-media.svg').star.star-sm
 						+img(src='img/svg/star-media.svg').star.star-large
@@ -45,6 +45,44 @@ mixin sMedia(data)
 						+e.video-wrap: iframe(src="https://vk.com/video_ext.php?oid=-130482053&id=456240834&hd=2&js_api=1" width="578" height="324" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen)
 				.tabs__content
 					+e.title.fw-700 Санкт-Петербург  / Банкетный зал The Event Hall
+					+e.slider--js
+						.arrow-wrap: +arrow
+						.swiper-wrapper
+							+e.slide.swiper-slide
+								+e.img-wrap: +img(src="img/slider-1.png", alt="").img-bg
+							+e.slide.swiper-slide
+								+e.img-wrap: +img(src="img/slider-2.png", alt="").img-bg
+							+e.slide.swiper-slide
+								+e.img-wrap: +img(src="img/slider-3.png", alt="").img-bg
+							+e.slide.swiper-slide
+								+e.img-wrap: +img(src="img/slider-4.png", alt="").img-bg
+						.swiper-pagination
+					+e.video-section
+						+img(src='img/svg/star-media.svg').star.star-sm
+						+img(src='img/svg/star-media.svg').star.star-large
+						+img(src='img/svg/city-2.svg').city
+						+e.promo.fw-700 Смотри видео с&nbsp;разбора
+							+img(src="img/svg/arr-bottom.svg", alt="")
+						+e.video-wrap: iframe(src="https://vk.com/video_ext.php?oid=-130482053&id=456240834&hd=2&js_api=1" width="578" height="324" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen)
 				.tabs__content
 					+e.title.fw-700 Санкт-Петербург  / Банкетный зал The Event Hall
+					+e.slider--js
+						.arrow-wrap: +arrow
+						.swiper-wrapper
+							+e.slide.swiper-slide
+								+e.img-wrap: +img(src="img/slider-1.png", alt="").img-bg
+							+e.slide.swiper-slide
+								+e.img-wrap: +img(src="img/slider-2.png", alt="").img-bg
+							+e.slide.swiper-slide
+								+e.img-wrap: +img(src="img/slider-3.png", alt="").img-bg
+							+e.slide.swiper-slide
+								+e.img-wrap: +img(src="img/slider-4.png", alt="").img-bg
+						.swiper-pagination
+					+e.video-section
+						+img(src='img/svg/star-media.svg').star.star-sm
+						+img(src='img/svg/star-media.svg').star.star-large
+						+img(src='img/svg/city-2.svg').city
+						+e.promo.fw-700 Смотри видео с&nbsp;разбора
+							+img(src="img/svg/arr-bottom.svg", alt="")
+						+e.video-wrap: iframe(src="https://vk.com/video_ext.php?oid=-130482053&id=456240834&hd=2&js_api=1" width="578" height="324" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen)
 	// end sMedia

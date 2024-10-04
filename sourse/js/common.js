@@ -60,6 +60,7 @@ function eventHandler() {
 
 		slidesPerView: 1,
 		spaceBetween: 50,
+    observeParents: true,
 		navigation: {
 			nextEl: ".sMedia .swiper-button-next",
 			prevEl: ".sMedia .swiper-button-prev",
@@ -70,11 +71,7 @@ function eventHandler() {
 			clickable: true, 
 		},
     breakpoints: {
-      // 768: {
-      //   slidesPerView: 2,
-      // },
       992: {
-        slidesPerView: 1,
         centeredSlides: true,
         initialSlide: 1,
         spaceBetween: 0,

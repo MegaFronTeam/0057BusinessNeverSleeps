@@ -49,6 +49,39 @@ function eventHandler() {
 		watchOverflow: true,
 	});
 
+  const swiperTabs = new Swiper('.tabs-slider--js', {
+		slidesPerView: 'auto',
+		freeMode: true,
+		watchOverflow: true,
+		spaceBetween: 12,
+	});
+
+  const mediaSwiper = new Swiper(".sMedia__slider--js", {
+
+		slidesPerView: 1,
+		spaceBetween: 50,
+		navigation: {
+			nextEl: ".sMedia .swiper-button-next",
+			prevEl: ".sMedia .swiper-button-prev",
+		},
+		pagination: {
+			el: ' .swiper-pagination',
+			type: 'bullets',
+			clickable: true, 
+		},
+    breakpoints: {
+      // 768: {
+      //   slidesPerView: 2,
+      // },
+      992: {
+        slidesPerView: 1,
+        centeredSlides: true,
+        initialSlide: 1,
+        spaceBetween: 0,
+      }
+    }
+	});
+
 	const swiper4 = new Swiper(".sBanners__slider--js", {
 		// slidesPerView: 5,
 		...defaultSl,

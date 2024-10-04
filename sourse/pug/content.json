@@ -3,6 +3,7 @@
 		{ "name":"О проекте", "url":"#sEvents"},
 		{ "name":"Для кого", "url":"#sForWhom"},
 		{ "name":"Регистрация", "url":"#sApply"},
+		{ "name":"Медиа", "url":"#sMedia"},
 		{ "name":"Вопросы", "url":"#sQuestions"},
 		{ "name":"Партнёры", "url":"#sPartners"},
 		{ "name":"Контакты", "url":"#sContact"}

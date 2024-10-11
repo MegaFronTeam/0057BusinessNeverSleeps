@@ -7,14 +7,14 @@ mixin sEvents(data)
 			mixin item(img, title, text, city, date='24 сентября', modal)
 				+e.item
 					+e.img-wrap
-						+e.info
-							+e.city!= city
-							+e.date
-								!= date
-								+e.time 15:00
 						.img-wrap-center: +img(`img/${img}`,'bg')
 					+e.content
 						h5!= title
+						+e.info
+							+e.city!= city
+							+e.date
+								!= date 
+								| 15:00
 						p!= text
 						+e.inner-row.row
 							if modal
